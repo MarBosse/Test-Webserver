@@ -29,7 +29,7 @@ def health() -> dict:
     return {"info": "I'm healthy"}
 
 @app.get("/api/test")
-def health() -> dict:
+def test() -> dict:
     audio = AudioSegment.from_file("test.m4a", format="m4a")
     new_filename = "1_test.mp3"
     audio.export(new_filename, format="mp3", bitrate="64k")
